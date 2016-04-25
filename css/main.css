@@ -1,12 +1,6 @@
-.overline {
-    text-decoration: overline;
-}
-
-.default_body_style {
+body {
     background-attachment: fixed;
     background-color: hsl(34, 53%, 82%);
-    background-image: url(../img/bg.jpg);
-    background-position: center;
 }
 
 .navbar {
@@ -15,10 +9,18 @@
     padding-left: 0.3cm;
 }
 
-.navbar-right {
-    margin-right: 1px;
+.frame {
+	min-height: 600px;
+	width: 100%;
+	border: 1px solid black;
 }
 
-.large-size {
-    font-size: 27px;
+#input {
+	 font-size: 14px;
+}
+
+#svg {
+	text-align: center;
+    min-height: 600px;
+    width: 100%;
 }

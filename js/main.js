@@ -11,7 +11,7 @@ $(function () {
             body.css('padding-top', '0px');
         } else {
             navbar.addClass('navbar-fixed-top');
-            body.css('padding-top', '100px');
+            body.css('padding-top', '150px');
         }
     }
 });
