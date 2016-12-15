@@ -1,26 +1,28 @@
 body {
-    background-attachment: fixed;
-    background-color: hsl(34, 53%, 82%);
+  background-attachment: fixed;
+  background-color: hsl(34, 53%, 82%);
 }
 
 .navbar {
-    background: rgba(100,100,100,.8);
-    color: #ffffff;
-    padding-left: 0.3cm;
+  background: rgba(100,100,100,.8);
+  color: #ffffff;
+  padding-left: 0.3cm;
 }
 
 .frame {
-	min-height: 600px;
-	width: 100%;
-	border: 1px solid black;
+  min-height: 600px;
+  width: 100%;
+  border: 1px solid black;
 }
 
 #input {
-	 font-size: 14px;
+  font-size: 14px;
 }
 
 #svg {
-	text-align: center;
-    min-height: 600px;
-    width: 100%;
+  text-align: center;
+  min-height: 600px;
+  width: 100%;
+  background-repeat: repeat;
+  background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAAZdEVYdFNvZnR3YXJlAHBhaW50Lm5ldCA0LjAuMTJDBGvsAAAAfUlEQVRIS+3OsQ2AMBAEQfovzi0BsTXBPim2NMkHe77WWvdX77u+OsMje2ziDI/ssYkzPLLHJs7wyB6b+OGwjpU+UzFYKVgxWClYMVgpWDFYKVgxWClYMVgpWDFYKVgxWClYMVgpWDFYKVgxWClYMVgpWDFYKVgxWCnYrPsBnag/8hm3DfAAAAAASUVORK5CYII=);
 }
