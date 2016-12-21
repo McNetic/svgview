@@ -3,7 +3,7 @@ $(function () {
     var navbar = $('#navbar');
     var body = $('body');
 
-    $(window).resize(adjustScreenSize($(window).width()));
+    //$(window).resize(adjustScreenSize($(window).width()));
 
     function adjustScreenSize(width) {
         if (width < 800) {
