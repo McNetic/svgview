@@ -20,7 +20,7 @@ $(function () {
     };
 
     var create_pngs = function() {
-        create_png('png');
+        create_png('png24', 24);
         create_png('png36', 36);
         create_png('png48', 48);
         create_png('png72', 72);
@@ -29,17 +29,15 @@ $(function () {
         create_png('png192', 192);
     };
 
-    var create_png = function(imgId, width) {
+    var create_png = function(imgId, size) {
         var doc = parser.parseFromString(input.val(), "image/svg+xml");
         var svgElement = $('svg', doc);
-        var orgWidth = svgElement.attr('width');
-        var orgHeight = svgElement.attr('height');
-        console.log(orgWidth);
+        var orgWidth = svgElement.get(0).width.baseVal.value;
+        var orgHeight = svgElement.get(0).height.baseVal.value;
 
-        width = width || orgWidth;
-        var factor = width / orgWidth;
-        var height = Math.round(orgHeight * factor);
-        console.log("svg w " + width + " h " + height);
+        var width = size;
+        var height = size;
+        var factor = (orgWidth > orgHeight) ? width / orgWidth : height / orgHeight;
 
         var svgHead = '<?xml version="1.0" standalone="no"?>'
                 + '<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">'
